@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meana Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Meana Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Hi! I'm a passionate Roblox developer showcasing my latest creations. Explore my portfolio to see my work!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card" onclick="showDetails(0)">
+                <img src="image1.jpg" alt="Indoor Garden Facility">
+                <h3>Indoor Garden Facility</h3>
+                <p>A unique indoor garden environment with a skylight and water feature.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(1)">
+                <img src="image2.jpg" alt="Ancient Temple">
+                <h3>Ancient Temple</h3>
+                <p>An immersive ancient temple with torches and obelisk design.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(2)">
+                <img src="image3.jpg" alt="Grand Palace">
+                <h3>Grand Palace</h3>
+                <p>A majestic palace with classical architecture.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(3)">
+                <img src="image4.jpg" alt="Courtyard Building">
+                <h3>Courtyard Building</h3>
+                <p>A detailed courtyard with multiple floors and windows.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(4)">
+                <img src="image5.jpg" alt="Treasury Department">
+                <h3>Treasury Department</h3>
+                <p>A government-inspired building with a statue and columns.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(5)">
+                <img src="image6.jpg" alt="Cozy Office">
+                <h3>Cozy Office</h3>
+                <p>A warm office setting with a fireplace and desk.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(6)">
+                <img src="image7.jpg" alt="Grand Hall">
+                <h3>Grand Hall</h3>
+                <p>A luxurious grand hall with chandeliers and stairs.</p>
+            </div>
+            <div class="project-card" onclick="showDetails(7)">
+                <img src="image8.jpg" alt="Old Town Square">
+                <h3>Old Town Square</h3>
+                <p>A historical town square with barrels and characters.</p>
+            </div>
+        </div>
+        <div id="project-details" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDetails()">&times;</span>
+                <img id="detail-image" src="" alt="Project Detail">
+                <h3 id="detail-title"></h3>
+                <p id="detail-description"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: contact@meana.xyz</p>
+        <p>Roblox Username: PieceLolaMine</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
